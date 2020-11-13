@@ -32,3 +32,7 @@ body {
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
+.form-check-label {
+    color: white
+}
