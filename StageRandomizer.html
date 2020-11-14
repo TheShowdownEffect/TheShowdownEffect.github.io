@@ -20,7 +20,9 @@
               $("#navbar-norm").replaceWith(data);
       });
   </script>
-      <form class="form-signin" method="get">
+
+  <h1 class="display-1 text-white" id=choice></h1>
+      <form class="form-signin border" method="">
           <div class="form-check">
               <label class="form-check-label">
                   <input type="checkbox" class="form-check-input" value="Battle of the Bandits"  checked>Battle of the Bandits </label>
@@ -45,12 +47,21 @@
               <label class="form-check-label">
                   <input type="checkbox" class="form-check-input" value="Fort Fiesta" >Fort Fiesta</label>
           </div>
-        <button class="mt-2 btn btn-lg btn-primary btn-block" name="" type="" value="">Get Stage</button>
+        <button class="mt-2 btn btn-lg btn-primary btn-block shadow-none" type ='button' onclick="randChoice()">Get Stage</button>
       </form>
 </body>
 <script src="assets/dist/js/bootstrap.bundle.js"></script>
 <script>
-var queryString = $('#myFormId').serialize();
-document.write(10);
+function randChoice(){
+    var choices = []
+    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+    for (var i = 0; i < checkboxes.length; i++) {
+      choices.push(checkboxes[i].value)
+    }
+    var randomChoice = choices[Math.floor(Math.random() * choices.length)];
+    document.getElementById("choice").innerHTML = randomChoice;
+}
+
+document.getElementById("demo").innerHTML = randomChoice;
 </script>
 </html>

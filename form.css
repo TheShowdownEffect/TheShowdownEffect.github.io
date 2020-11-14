@@ -10,7 +10,6 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #DBCBAD;
 }
 
 .form-signin {
@@ -18,6 +17,7 @@ body {
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  color: #ffffff
 }
 .form-signin .checkbox {
   font-weight: 400;
@@ -31,8 +31,4 @@ body {
 }
 .form-signin .form-control:focus {
   z-index: 2;
-}
-
-.form-check-label {
-    color: white
 }
