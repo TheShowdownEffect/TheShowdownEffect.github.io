@@ -25,17 +25,34 @@ thead>tr>th {
 
  .btn-custom {
      font-weight: 700;
+     letter-spacing: 1000px
      border: none;
      border-radius: 300px;
-     background-color: #708EC6;
-     border-color: #708EC6;
+     background-color: #708EC6 !important;
+     border-color: #708EC6 !important;
  }
 
- .btn-custom:hover, .btn-custom:focus, .btn-custom:active {
+
+ .btn-custom:hover {
    color: #fff;
    background-color: #4975C7 !important;
  }
 
- .btn-custom:active, .btn-custom:focus {
-   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+ .btn-custom2 {
+     font-weight: 700;
+     letter-spacing: 1000px
+     border: none;
+     border-radius: 2px;
+     background-color: #708EC6 !important;
+     border-color: #708EC6 !important;
+ }
+
+
+ .btn-custom2:hover {
+   color: #fff;
+   background-color: #4975C7 !important;
+ }
+
+ hr {
+   background-color: rgba(255, 255, 255, 0.13);
  }
