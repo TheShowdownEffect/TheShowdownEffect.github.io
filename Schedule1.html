@@ -14,10 +14,150 @@
  </head>
     <body>
         <div id="navbar-norm"></div>
-            <p class="text-left text-white p-5">Schedule TBD
+        <div style="height:50px;"><br></div>
+        <p id='Info' class="text-left text-white pl-5">
+            Info <br/>
+        </p>
+        <p id='Day1' class="text-left text-white h4 pl-5">
+            Day 1<br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match1' class="text-left text-white pl-5">
+            Match 1: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match2' class="text-left text-white pl-5">
+            Match 2: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match3' class="text-left text-white pl-5">
+            Match 3: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match4' class="text-left text-white pl-5">
+            Match 4: <br/>
+        </p>
+        <p id='Day2' class="text-left text-white h4 pl-5">
+            Day 2 <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match5' class="text-left text-white pl-5">
+            Match 5: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match6'class="text-left text-white pl-5">
+            Match 6: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match7'class="text-left text-white pl-5">
+            Match 7: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match8'class="text-left text-white pl-5">
+            Match 8: <br/>
+        </p>
+        <p id='Day3' class="text-left text-white h4 pl-5">
+            Day 3 - 8th Place Decided<br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match9'class="text-left text-white pl-5">
+            Match 9: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match10'class="text-left text-white pl-5">
+            Match 10: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match11'class="text-left text-white pl-5">
+            Match 11: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match12'class="text-left text-white pl-5">
+            Match 12: <br/>
+        </p>
+        <p id='Day4' class="text-left text-white h4 pl-5">
+            Day 4 - 6th - 7th Place Decided<br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match13'class="text-left text-white pl-5">
+            Match 13: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match14'class="text-left text-white pl-5">
+            Match 14: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match15'class="text-left text-white pl-5">
+            Match 15: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match16'class="text-left text-white pl-5">
+            Match 16: <br/>
+        </p>
+        <p id='Day5' class="text-left text-white h4 pl-5">
+            Day 5 - 1st - 5th Place Decided<br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match17'class="text-left text-white pl-5">
+            Match 17: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match18'class="text-left text-white pl-5">
+            Match 18: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match19'class="text-left text-white pl-5">
+            Match 19: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
+        <p id='Match20'class="text-left text-white pl-5">
+            Match 20: <br/>
+        </p>
+        <div style="height:10px;"><br></div>
         </div>
 
-
+<script src="https://unpkg.com/dayjs"></script>
+<script src="https://unpkg.com/dayjs@1.10.3/plugin/localizedFormat.js"></script>
+<script src="https://unpkg.com/dayjs@1.10.3/plugin/utc.js"></script>
+<script src="https://unpkg.com/dayjs@1.10.3/plugin/timezone.js"></script>
+<script>
+    dayjs().format()
+</script>
+<script>
+    dayjs.extend(window.dayjs_plugin_localizedFormat)
+    dayjs.extend(window.dayjs_plugin_utc)
+    dayjs.extend(window.dayjs_plugin_timezone)
+    Team1 = "Team 1"
+    Team2 = "Team 2"
+    Team3 = "Team 3"
+    Team4 = "Team 4"
+    Team5 = "Team 5"
+    Team6 = "Team 6"
+    Team7 = "Team 7"
+    Team8 = "Team 8"
+    TeamTBD = "Team TBD"
+    document.getElementById("Info").innerHTML = "*Attempted conversion to local time. All times converted to " + dayjs.tz.guess();
+    document.getElementById("Match1").innerHTML = "Match 1: " + Team1 + " vs. " + Team8 + " - " + dayjs("2021-01-15 15:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match2").innerHTML = "Match 2: " + Team4 + " vs. " + Team5 + " - " +  dayjs("2021-01-15 16:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match3").innerHTML = "Match 3: " + Team3 + " vs. " + Team6 + " - " +  dayjs("2021-01-15 16:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match4").innerHTML = "Match 4: " + Team2 + " vs. " + Team7 + " - " + dayjs("2021-01-15 17:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match5").innerHTML = "Match 5: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-16 15:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match6").innerHTML = "Match 6: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-16 16:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match7").innerHTML = "Match 7: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-16 16:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match8").innerHTML = "Match 8: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-16 17:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match9").innerHTML = "Match 9: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-17 15:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match10").innerHTML = "Match 10: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-18 16:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match11").innerHTML = "Match 11 - Loser is 8th Place: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-18 16:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match12").innerHTML = "Match 12: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-18 17:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match13").innerHTML = "Match 13 - Loser is 7th Place: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-19 15:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match14").innerHTML = "Match 14: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-19 16:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match15").innerHTML = "Match 15: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-19 16:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match16").innerHTML = "Match 16 - Loser is 6th Place: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-20 17:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match17").innerHTML = "Match 17 - Loser is 5th Place/Winner is 4th Place: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-20 15:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match18").innerHTML = "Match 18 - Loser is 3rd Place: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-20 16:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match19").innerHTML = "Match 19 - If the Winner of Match 15 wins (Loser is 2nd Place/Winner is 1st Place): " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-20 16:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match20").innerHTML = "[If Necessary] Match 20: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-20 17:00").tz("America/Chicago", true).local().format('L LT');
+</script>
 <script>
     $.get("navbar.html", function(data){
         $("#navbar-norm").replaceWith(data);
