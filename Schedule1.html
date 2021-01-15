@@ -22,7 +22,7 @@
             Day 1<br/>
         </p>
         <div style="height:10px;"><br></div>
-        <p id='Match1' class="text-left text-white pl-5">
+        <p id='Match4' class="text-left text-white pl-5">
             Match 1: <br/>
         </p>
         <div style="height:10px;"><br></div>
@@ -34,7 +34,7 @@
             Match 3: <br/>
         </p>
         <div style="height:10px;"><br></div>
-        <p id='Match4' class="text-left text-white pl-5">
+        <p id='Match1' class="text-left text-white pl-5">
             Match 4: <br/>
         </p>
         <p id='Day2' class="text-left text-white h4 pl-5">
@@ -134,10 +134,10 @@
     Team8 = "Team 8"
     TeamTBD = "Team TBD"
     document.getElementById("Info").innerHTML = "*Attempted conversion to local time. All times converted to " + dayjs.tz.guess();
-    document.getElementById("Match1").innerHTML = "Match 1: " + Team1 + " vs. " + Team8 + " - " + dayjs("2021-01-16 16:00").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match1").innerHTML = "Match 1: " + Team1 + " vs. " + Team8 + " - " + dayjs("2021-01-16 17:30").tz("America/Chicago", true).local().format('L LT');
     document.getElementById("Match2").innerHTML = "Match 2: " + Team2 + " vs. " + Team7 + " - " +  dayjs("2021-01-16 16:30").tz("America/Chicago", true).local().format('L LT');
     document.getElementById("Match3").innerHTML = "Match 3: " + Team3 + " vs. " + Team6 + " - " +  dayjs("2021-01-16 17:00").tz("America/Chicago", true).local().format('L LT');
-    document.getElementById("Match4").innerHTML = "Match 4: " + Team4 + " vs. " + Team5 + " - " + dayjs("2021-01-16 17:30").tz("America/Chicago", true).local().format('L LT');
+    document.getElementById("Match4").innerHTML = "Match 4: " + Team4 + " vs. " + Team5 + " - " + dayjs("2021-01-16 16:00").tz("America/Chicago", true).local().format('L LT');
     document.getElementById("Match5").innerHTML = "Match 5: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-17 16:00").tz("America/Chicago", true).local().format('L LT');
     document.getElementById("Match6").innerHTML = "Match 6: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-17 16:30").tz("America/Chicago", true).local().format('L LT');
     document.getElementById("Match7").innerHTML = "Match 7: " + TeamTBD + " vs. " + TeamTBD + " - " + dayjs("2021-01-17 17:00").tz("America/Chicago", true).local().format('L LT');
