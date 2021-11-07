@@ -1,0 +1,104 @@
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+
+	//////////////////////// Prevent closing from click inside dropdown
+    $(document).on('click', '.dropdown-menu', function (e) {
+      e.stopPropagation();
+    });
+
+    // make it as accordion for smaller screens
+    if ($(window).width() < 992) {
+	  	$('.dropdown-menu a').click(function(e){
+	  		e.preventDefault();
+	        if($(this).next('.submenu').length){
+	        	$(this).next('.submenu').toggle();
+	        }
+	        $('.dropdown').on('hide.bs.dropdown', function () {
+			   $(this).find('.submenu').hide();
+			})
+	  	});
+	}
+
+}); // jquery end
+</script>
+<style type="text/css">
+	@media (min-width: 992px){
+		.dropdown-menu .dropdown-toggle:after{
+			border-top: .3em solid transparent;
+		    border-right: 0;
+		    border-bottom: .3em solid transparent;
+		    border-left: .3em solid;
+		}
+
+		.dropdown-menu .dropdown-menu{
+			margin-left:0; margin-right: 0;
+		}
+
+		.dropdown-menu li{
+			position: relative;
+		}
+		.nav-item .submenu{
+			display: none;
+			position: absolute;
+			left:100%; top:-7px;
+            background-color: #f57b63;
+		}
+		.nav-item .submenu-left{
+			right:100%; left:auto;
+		}
+
+		.dropdown-menu > li:hover{ background-color: #fac2b7 }
+		.dropdown-menu > li:hover > .submenu{
+			display: block;
+		}
+	}
+</style>
+<nav class="navbar navbar-custom fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href='index.html'>
+        <img src="assets\images\favicon.ico" width="30" height="30" alt="">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href='index.html'>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tournament</a>
+        <ul class="dropdown-menu">
+		  <li><a class="dropdown-item dropdown-toggle" href="../Bracket1.html">Tournament 1</a>
+		  	 <ul class="submenu dropdown-menu">
+				<li><a class="dropdown-item" href="../Rules1.html">Rules</a></li>
+                <li><a class="dropdown-item" href="../Schedule1.html">Schedule</a></li>
+			    <li><a class="dropdown-item" href="../Bracket1.html">Bracket</a></li>
+                <li><a class="dropdown-item" href="../Teams1.html">Teams</a></li>
+			    <li><a class="dropdown-item" href="https://forms.gle/Hxn8vLYfvpg8y9ps9" target="_blank">Sign Up</a></li>
+				<li><a class="dropdown-item" href="../Giveaway.html" target="_blank">Giveaway</a></li>
+			 </ul>
+		  </li>
+		  <li><a class="dropdown-item dropdown-toggle" href="../Bracket1.html">Tournament 2</a>
+			<ul class="submenu dropdown-menu">
+			<li><a class="dropdown-item" href="https://forms.gle/9gNtkhoPH7USxGGy5" target="_blank">Sign Up</a></li>
+			 <li><a class="dropdown-item" href="../Rules2.html">Rules</a></li>
+			 <li><a class="dropdown-item" href="../Schedule2.html">Schedule</a></li>
+			 <li><a class="dropdown-item" href="../Bracket2.html">Bracket</a></li>
+			 <li><a class="dropdown-item" href="../Teams2.html">Teams</a></li>
+		  </ul>
+	   </li>
+	    </ul>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href='../StageRandomizer.html'>Stage Select<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
