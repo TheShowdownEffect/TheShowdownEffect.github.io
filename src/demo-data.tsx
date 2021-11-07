@@ -1,4 +1,7 @@
-	
+import * as dayjs from 'dayjs'
+import * as tz from 'dayjs/plugin/timezone'
+dayjs.extend(tz)
+dayjs.locale('zh-cn')
 	export default [
             {
                 styles: {
@@ -74,7 +77,7 @@
             {
             "@id": "1",
             "id": "1",
-            "scheduled": null,
+            "scheduled": dayjs("2022-01-07 16:00").unix() * 1000,
             "name": "Match 1",
             "bracketLabel": null,
             "sides": {
@@ -105,7 +108,7 @@
             {
             "@id": "2",
             "id": "2",
-            "scheduled": null,
+            "scheduled": dayjs("2022-01-07 17:00").unix() * 1000,
             "name": "Match 2",
             "bracketLabel": null,
             "sides": {
@@ -136,7 +139,7 @@
             {
             "@id": "3",
             "id": "3",
-            "scheduled": null,
+            "scheduled":  dayjs("2022-01-07 18:00").unix() * 1000,
             "name": "Match 3",
             "bracketLabel": null,
             "sides": {
@@ -167,7 +170,7 @@
             {
             "@id": "4", 
             "id": "4",
-            "scheduled": null,
+            "scheduled": dayjs("2022-01-07 19:00").unix() * 1000,
             "name": "Match 4",
             "bracketLabel": null,
             "sides": {
@@ -197,7 +200,7 @@
             {
             "@id": "5",
             "id": "5",
-            "scheduled": null,
+            "scheduled": dayjs("2022-01-08 16:00").unix() * 1000,
             "name": "Match 5",
             "bracketLabel": null,
             "sides": {
@@ -227,7 +230,7 @@
             {
                 "@id": "6",
                 "id": "6",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-08 17:00").unix() * 1000,
                 "name": "Match 6",
                 "bracketLabel": null,
                 "sides": {
@@ -257,7 +260,7 @@
             {
                 "@id": "7",
                 "id": "7",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-08 18:00").unix() * 1000,
                 "name": "Match 7",
                 "bracketLabel": null,
                 "sides": {
@@ -287,7 +290,7 @@
             {
                 "@id": "8",
                 "id": "8",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-08 19:00").unix() * 1000,
                 "name": "Match 8",
                 "bracketLabel": null,
                 "sides": {
@@ -317,7 +320,7 @@
             {
                 "@id": "9",
                 "id": "9",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-09 16:00").unix() * 1000,
                 "name": "Match 9",
                 "bracketLabel": null,
                 "sides": {
@@ -347,7 +350,7 @@
             {
                 "@id": "10",
                 "id": "10",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-09 17:00").unix() * 1000,
                 "name": "Match 10",
                 "bracketLabel": null,
                 "sides": {
@@ -377,7 +380,7 @@
             {
                 "@id": "11",
                 "id": "11",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-09 18:00").unix() * 1000,
                 "name": "Match 11",
                 "bracketLabel": "Loser is 8th Place",
                 "sides": {
@@ -407,7 +410,7 @@
             {
                 "@id": "12",
                 "id": "12",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-09 19:00").unix() * 1000,
                 "name": "Match 12",
                 "bracketLabel": null,
                 "sides": {
@@ -437,7 +440,7 @@
             {
                 "@id": "13",
                 "id": "13",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-14 16:00").unix() * 1000,
                 "name": "Match 13",
                 "bracketLabel": "Loser is 7th Place",
                 "sides": {
@@ -467,7 +470,7 @@
             {
                 "@id": "14",
                 "id": "14",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-14 17:00").unix() * 1000,
                 "name": "Match 14",
                 "bracketLabel": null,
                 "sides": {
@@ -497,7 +500,7 @@
             {
                 "@id": "15",
                 "id": "15",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-14 18:00").unix() * 1000,
                 "name": "Match 15",
                 "bracketLabel": null,
                 "sides": {
@@ -527,7 +530,7 @@
             {
                 "@id": "16",
                 "id": "16",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-15 16:00").unix() * 1000,
                 "name": "Match 16",
                 "bracketLabel": "Loser is 6th Place",
                 "sides": {
@@ -557,7 +560,7 @@
             {
                 "@id": "17",
                 "id": "17",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-15 17:00").unix() * 1000,
                 "name": "Match 17",
                 "bracketLabel": "For 4th/5th Place",
                 "sides": {
@@ -587,7 +590,7 @@
             {
                 "@id": "18",
                 "id": "18",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-16 16:00").unix() * 1000,
                 "name": "Match 18",
                 "bracketLabel": "Loser is 3rd Place",
                 "sides": {
@@ -617,7 +620,7 @@
             {
                 "@id": "19",
                 "id": "19",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-16 17:00").unix() * 1000,
                 "name": "Match 19",
                 "bracketLabel": "Possibly for 1st/2nd Place",
                 "sides": {
@@ -647,7 +650,7 @@
             {
                 "@id": "20",
                 "id": "20",
-                "scheduled": null,
+                "scheduled": dayjs("2022-01-16 18:00").unix() * 1000,
                 "name": "Match 20",
                 "bracketLabel": "For 1st/2nd Place",
                 "sides": {

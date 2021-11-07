@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/underscore": "^1.8.8",
+    "dayjs": "^1.10.7",
     "jsog": "^1.0.7",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
