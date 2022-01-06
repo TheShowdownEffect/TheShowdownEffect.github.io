@@ -21,7 +21,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A2", 
                 "id": "2",
-                "name": "Team 2",
+                "name": "Teamy McTeam Face",
                 }
             },
             // Team 3
@@ -45,7 +45,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A5", 
                 "id": "5",
-                "name": "Team 5",
+                "name": "Plz Nerf Dive",
                 }
             },
             // Team 6
@@ -53,7 +53,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A6", 
                 "id": "6",
-                "name": "Team 6",
+                "name": "Blades and Ballistics",
                 }
             },
             // Team 7
@@ -61,7 +61,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A7", 
                 "id": "7",
-                "name": "Team 7",
+                "name": "Traitor's Bluff",
                 }
             },
             // Team 8
@@ -69,7 +69,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A8", 
                 "id": "8",
-                "name": "Team 8",
+                "name": "Grease Squad",
                 }
             },
 
