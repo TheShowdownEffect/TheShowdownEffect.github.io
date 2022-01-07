@@ -13,7 +13,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A1", 
                 "id": "1",
-                "name": "Team Name Please",
+                "name": "Your Favorite Team",
                 }
             },
             // Team 2
