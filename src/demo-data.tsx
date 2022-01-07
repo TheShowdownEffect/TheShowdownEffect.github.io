@@ -29,7 +29,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A3", 
                 "id": "3",
-                "name": "Team 3",
+                "name": "Drainers",
                 }
             },
             // Team 4
@@ -37,7 +37,7 @@ dayjs.locale('zh-cn')
                 "team": {
                 "@id": "A4", 
                 "id": "4",
-                "name": "Team 4",
+                "name": "Blank",
                 }
             },
             // Team 5
