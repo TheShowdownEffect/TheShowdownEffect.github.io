@@ -446,7 +446,7 @@ dayjs.locale('zh-cn')
                 "sides": {
                     "home": {
                         "team": {'@ref': 'A1' },
-                        "score": {"score": null},
+                        "score": {"score": 2},
                         "seed": {
                             "displayName": "Loser of Match 12",
                             "rank": 2,
@@ -456,7 +456,7 @@ dayjs.locale('zh-cn')
                     },
                     "visitor": {
                         "team": {'@ref': 'A7' },
-                        "score": {"score": null},
+                        "score": {"score": 0},
                         "seed": {
                             "displayName": "Winner of Match 11",
                             "rank": 1,
@@ -476,7 +476,7 @@ dayjs.locale('zh-cn')
                 "sides": {
                     "home": {
                         "team": {'@ref': 'A5' },
-                        "score": {"score": null},
+                        "score": {"score": 2},
                         "seed": {
                             "displayName": "Winner of Match 9",
                             "rank": 1,
@@ -486,7 +486,7 @@ dayjs.locale('zh-cn')
                     },
                     "visitor": {
                         "team": {'@ref': 'A4' },
-                        "score": {"score": null},
+                        "score": {"score": 0},
                         "seed": {
                             "displayName": "Winner of Match 10",
                             "rank": 1,
@@ -535,7 +535,7 @@ dayjs.locale('zh-cn')
                 "bracketLabel": "Loser is 6th Place",
                 "sides": {
                     "home": {
-                        "team": null,
+                        "team": {'@ref': 'A1' },
                         "score": {"score": null},
                         "seed": {
                             "displayName": "Winner of Match 13",
@@ -565,7 +565,7 @@ dayjs.locale('zh-cn')
                 "bracketLabel": "For 4th/5th Place",
                 "sides": {
                     "home": {
-                        "team": null,
+                        "team": {'@ref': 'A4' },
                         "score": {"score": null},
                         "seed": {
                             "displayName": "Loser of Match 14",
@@ -605,7 +605,7 @@ dayjs.locale('zh-cn')
                         }
                     },
                     "visitor": {
-                        "team": null,
+                        "team": {'@ref': 'A5' },
                         "score": {"score": null},
                         "seed": {
                             "displayName": "Winner of Match 14",
