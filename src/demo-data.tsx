@@ -506,7 +506,7 @@ dayjs.locale('zh-cn')
                 "sides": {
                     "home": {
                         "team": {'@ref': 'A8' },
-                        "score": {"score": null},
+                        "score": {"score": 2},
                         "seed": {
                             "displayName": "Winner of Match 7",
                             "rank": 1,
@@ -516,7 +516,7 @@ dayjs.locale('zh-cn')
                     },
                     "visitor": {
                         "team": {'@ref': 'A3' },
-                        "score": {"score": null},
+                        "score": {"score": 0},
                         "seed": {
                             "displayName": "Winner of Match 8",
                             "rank": 1,
@@ -536,7 +536,7 @@ dayjs.locale('zh-cn')
                 "sides": {
                     "home": {
                         "team": {'@ref': 'A1' },
-                        "score": {"score": null},
+                        "score": {"score": 1},
                         "seed": {
                             "displayName": "Winner of Match 13",
                             "rank": 1,
@@ -546,7 +546,7 @@ dayjs.locale('zh-cn')
                     },
                     "visitor": {
                         "team": {'@ref': 'A2' },
-                        "score": {"score": null},
+                        "score": {"score": 2},
                         "seed": {
                             "displayName": "Winner of Match 12",
                             "rank": 1,
@@ -566,7 +566,7 @@ dayjs.locale('zh-cn')
                 "sides": {
                     "home": {
                         "team": {'@ref': 'A4' },
-                        "score": {"score": null},
+                        "score": {"score": 0},
                         "seed": {
                             "displayName": "Loser of Match 14",
                             "rank": 2,
@@ -575,8 +575,8 @@ dayjs.locale('zh-cn')
                         }
                     },
                     "visitor": {
-                        "team": null,
-                        "score": {"score": null},
+                        "team": {'@ref': 'A2' },
+                        "score": {"score": 2},
                         "seed": {
                             "displayName": "Winner of Match 16",
                             "rank": 1,
@@ -595,7 +595,7 @@ dayjs.locale('zh-cn')
                 "bracketLabel": "Loser is 3rd Place",
                 "sides": {
                     "home": {
-                        "team": null,
+                        "team": {'@ref': 'A3' },
                         "score": {"score": null},
                         "seed": {
                             "displayName": "Loser of Match 15",
@@ -625,7 +625,7 @@ dayjs.locale('zh-cn')
                 "bracketLabel": "Possibly for 1st/2nd Place",
                 "sides": {
                     "home": {
-                        "team": null,
+                        "team": {'@ref': 'A8' },
                         "score": {"score": null},
                         "seed": {
                             "displayName": "Winner of Match 15",
