@@ -32,9 +32,6 @@ lines,
 
 ---
 
-[links](https://github.com/TheShowdownEffect/TheShowdownEffect.github.io/edit/master/news/launcher.md),
+and [links](https://github.com/TheShowdownEffect/TheShowdownEffect.github.io/edit/master/news/launcher.md),
 
-and images,
-
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
