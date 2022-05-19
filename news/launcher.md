@@ -34,13 +34,6 @@ lines,
 
 [links](https://github.com/TheShowdownEffect/TheShowdownEffect.github.io/edit/master/news/launcher.md),
 
-nested lists,
-
-- First list item
-  - First nested list item
-    - Second nested list item
-      - Nested
-
 and images,
 
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
